@@ -2,9 +2,7 @@
   "name": "water-management-system",
   "version": "1.0.0",
   "scripts": {
-    "install-all": "cd backend && npm install && cd ../frontend && npm install",
-    "dev-backend": "cd backend && npm run dev",
-    "dev-frontend": "cd frontend && npm start",
-    "start": "cd backend && npm start"
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "start": "node backend/server.js"
   }
 }
